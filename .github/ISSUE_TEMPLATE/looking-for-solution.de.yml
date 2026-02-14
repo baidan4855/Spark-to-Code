@@ -1,0 +1,50 @@
+name: Bestehende Loesung gesucht
+description: Frage die Community nach Empfehlungen fuer vorhandene Software.
+title: "[Loesung gesucht] "
+labels:
+  - looking-for-solution
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nutze dieses Formular, wenn du zuerst ein bestehendes Tool finden willst, statt neu zu bauen.
+        
+        Du kannst auf Englisch, Chinesisch, Franzoesisch oder Deutsch schreiben.
+  - type: textarea
+    id: problem-scenario
+    attributes:
+      label: 1. Problemszenario
+      description: Was willst du erreichen und wo scheitert der aktuelle Ablauf?
+      placeholder: Kontext, Randbedingungen und erwartetes Ergebnis angeben.
+    validations:
+      required: true
+  - type: textarea
+    id: must-have
+    attributes:
+      label: 2. Muss-Anforderungen
+      description: Welche Funktionen sind zwingend erforderlich?
+      placeholder: Beispiel: API, Self-Hosting, Mobile-App, niedrige Kosten
+    validations:
+      required: true
+  - type: textarea
+    id: tried-tools
+    attributes:
+      label: 3. Bereits getestete Tools
+      description: Welche Produkte hast du ausprobiert und warum reichen sie nicht?
+      placeholder: Links und konkrete Defizite angeben.
+    validations:
+      required: false
+  - type: input
+    id: budget
+    attributes:
+      label: 4. Budgetbereich (optional)
+      placeholder: Beispiel: Kostenlos / < 20 USD pro Monat / Enterprise
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: Ich habe bestehende Issues vor dem Posten durchsucht.
+          required: true

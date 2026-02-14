@@ -1,0 +1,73 @@
+name: 开发进度更新
+description: 分享已进入开发阶段的项目/团队进展。
+title: "[开发中] "
+labels:
+  - building
+body:
+  - type: markdown
+    attributes:
+      value: |
+        使用此表单同步项目进度、里程碑、阻塞项和协作需求。
+        
+        你可以使用英语、中文、法语或德语填写。
+  - type: input
+    id: project-name
+    attributes:
+      label: 1. 项目名称
+      placeholder: 你的项目或团队名称
+    validations:
+      required: true
+  - type: input
+    id: related-issue
+    attributes:
+      label: 2. 关联想法 Issue
+      description: 如果有，请填写原始想法 Issue 链接
+      placeholder: 例如：#12
+    validations:
+      required: false
+  - type: textarea
+    id: current-status
+    attributes:
+      label: 3. 当前状态
+      description: 到目前为止已经完成了什么？
+      placeholder: MVP 范围、已完成模块、当前 Demo 状态
+    validations:
+      required: true
+  - type: textarea
+    id: milestone-plan
+    attributes:
+      label: 4. 下一里程碑
+      description: 你的下一个具体目标是什么？
+      placeholder: 目标、计划日期、验收标准
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: 5. 当前阻塞项
+      description: 现在最影响推进的因素是什么？
+      placeholder: 技术问题、设计空缺、用户反馈不足等
+    validations:
+      required: false
+  - type: textarea
+    id: team-needs
+    attributes:
+      label: 6. 团队需求
+      description: 是否需要招募？请说明角色/技术栈/时间预期。
+      placeholder: 例如：需要 1 位前端（React/TS），每周 4-6 小时
+    validations:
+      required: false
+  - type: input
+    id: demo-link
+    attributes:
+      label: 7. Demo 或仓库链接
+      placeholder: URL
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: 我理解发布在这里的内容属于公开共享信息。
+          required: true

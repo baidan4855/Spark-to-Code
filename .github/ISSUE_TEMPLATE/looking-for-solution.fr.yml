@@ -1,0 +1,50 @@
+name: Recherche de solution existante
+description: Demandez des recommandations de logiciels deja disponibles.
+title: "[Recherche de solution] "
+labels:
+  - looking-for-solution
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Utilisez ce formulaire si vous souhaitez trouver un outil existant avant de construire from scratch.
+        
+        Vous pouvez ecrire en anglais, chinois, francais ou allemand.
+  - type: textarea
+    id: problem-scenario
+    attributes:
+      label: 1. Scenario du probleme
+      description: Que cherchez-vous a accomplir, et ou le workflow actuel echoue ?
+      placeholder: Incluez contexte, contraintes et resultat attendu.
+    validations:
+      required: true
+  - type: textarea
+    id: must-have
+    attributes:
+      label: 2. Exigences indispensables
+      description: Quelles capacites sont obligatoires ?
+      placeholder: Exemple : API, auto-hebergement, mobile, faible cout
+    validations:
+      required: true
+  - type: textarea
+    id: tried-tools
+    attributes:
+      label: 3. Outils deja testes
+      description: Quels produits avez-vous essayes et pourquoi ne suffisent-ils pas ?
+      placeholder: Ajoutez des liens et des limites concretes.
+    validations:
+      required: false
+  - type: input
+    id: budget
+    attributes:
+      label: 4. Budget (optionnel)
+      placeholder: Exemple : Gratuit / < 20 USD mois / Budget entreprise
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: J'ai recherche les issues existantes avant de publier.
+          required: true

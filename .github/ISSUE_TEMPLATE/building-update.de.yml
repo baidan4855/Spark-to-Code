@@ -1,0 +1,73 @@
+name: Entwicklungs-Update
+description: Teile Projekt-/Teamfortschritt fuer Ideen, die bereits gebaut werden.
+title: "[In Entwicklung] "
+labels:
+  - building
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dieses Formular dient fuer Fortschritt, Meilensteine, Blocker und Kooperationsbedarf.
+        
+        Du kannst auf Englisch, Chinesisch, Franzoesisch oder Deutsch schreiben.
+  - type: input
+    id: project-name
+    attributes:
+      label: 1. Projektname
+      placeholder: Name deines Projekts/Teams
+    validations:
+      required: true
+  - type: input
+    id: related-issue
+    attributes:
+      label: 2. Zugehoeriges Idee-Issue
+      description: Link zum urspruenglichen Idee-Issue (falls vorhanden)
+      placeholder: Beispiel: #12
+    validations:
+      required: false
+  - type: textarea
+    id: current-status
+    attributes:
+      label: 3. Aktueller Stand
+      description: Was wurde bisher umgesetzt?
+      placeholder: MVP-Umfang, fertige Module, Demo-Status
+    validations:
+      required: true
+  - type: textarea
+    id: milestone-plan
+    attributes:
+      label: 4. Naechster Meilenstein
+      description: Was ist der naechste konkrete Schritt?
+      placeholder: Ziel, Termin, Akzeptanzkriterien
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: 5. Blocker
+      description: Was bremst euch aktuell aus?
+      placeholder: Technische Herausforderung, Design-Luecke, fehlendes Nutzerfeedback
+    validations:
+      required: false
+  - type: textarea
+    id: team-needs
+    attributes:
+      label: 6. Team-Bedarf
+      description: Sucht ihr Verstaerkung? Rolle/Stack/Zeit bitte angeben.
+      placeholder: Beispiel: 1 Frontend-Dev (React/TS), 4-6 Std/Woche
+    validations:
+      required: false
+  - type: input
+    id: demo-link
+    attributes:
+      label: 7. Demo- oder Repo-Link
+      placeholder: URL
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: Ich verstehe, dass hier veroeffentlichte Inhalte oeffentlich geteilt sind.
+          required: true

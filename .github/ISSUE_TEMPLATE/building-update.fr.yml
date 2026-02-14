@@ -1,0 +1,73 @@
+name: Mise a jour de projet
+description: Partagez l'avancement d'une equipe/projet deja en developpement.
+title: "[En cours] "
+labels:
+  - building
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Utilisez ce formulaire pour partager avancement, jalons, blocages et besoins de collaboration.
+        
+        Vous pouvez ecrire en anglais, chinois, francais ou allemand.
+  - type: input
+    id: project-name
+    attributes:
+      label: 1. Nom du projet
+      placeholder: Nom de votre projet/equipe
+    validations:
+      required: true
+  - type: input
+    id: related-issue
+    attributes:
+      label: 2. Issue idee associee
+      description: Lien vers l'issue d'idee d'origine (si disponible)
+      placeholder: Exemple : #12
+    validations:
+      required: false
+  - type: textarea
+    id: current-status
+    attributes:
+      label: 3. Etat actuel
+      description: Qu'avez-vous deja construit ?
+      placeholder: Portee MVP, modules termines, etat de la demo
+    validations:
+      required: true
+  - type: textarea
+    id: milestone-plan
+    attributes:
+      label: 4. Prochain jalon
+      description: Quelle est la prochaine etape concrete ?
+      placeholder: Objectif, date cible, criteres d'acceptation
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: 5. Blocages
+      description: Qu'est-ce qui ralentit actuellement l'equipe ?
+      placeholder: Defi technique, manque design, manque de retours utilisateurs
+    validations:
+      required: false
+  - type: textarea
+    id: team-needs
+    attributes:
+      label: 6. Besoins d'equipe
+      description: Recrutez-vous ? Si oui, precisez role/stack/disponibilite.
+      placeholder: Exemple : 1 dev frontend (React/TS), 4-6h/semaine
+    validations:
+      required: false
+  - type: input
+    id: demo-link
+    attributes:
+      label: 7. Lien demo ou repo
+      placeholder: URL
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: Je comprends que les contenus publies ici sont partages publiquement.
+          required: true

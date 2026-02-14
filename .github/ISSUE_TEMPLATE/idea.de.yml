@@ -1,0 +1,67 @@
+name: Idee / Pain Point
+description: Teile eine neue Software-Idee, ein Problem oder ein unerfuelltes Beduerfnis.
+title: "[Idee] "
+labels:
+  - idea
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fuers Teilen. Bitte konkret und szenariobasiert formulieren.
+        
+        Du kannst auf Englisch, Chinesisch, Franzoesisch oder Deutsch schreiben.
+  - type: textarea
+    id: pain-point
+    attributes:
+      label: 1. Problem
+      description: Was ist heute konkret unpraktisch?
+      placeholder: Beschreibe Szenario, aktuellen Ablauf und die Bruchstelle.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 2. Vorgeschlagene Loesung
+      description: Welche Software/Funktion stellst du dir vor?
+      placeholder: Beschreibe Kernablauf, Ein-/Ausgabe und Zielerlebnis.
+    validations:
+      required: true
+  - type: input
+    id: target-users
+    attributes:
+      label: 3. Zielnutzer
+      description: Wer wird es nutzen?
+      placeholder: Beispiel: Indie-Fotografen, Studienanfaenger
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 4. Bestehende Alternativen
+      description: Welche Tools hast du geprueft und warum reichen sie nicht?
+      placeholder: Links und konkrete Luecken angeben.
+    validations:
+      required: true
+  - type: dropdown
+    id: support-needed
+    attributes:
+      label: 5. Benoetigte Unterstuetzung
+      description: Welche Hilfe brauchst du aktuell?
+      multiple: true
+      options:
+        - Empfehlung fuer bestehendes Tool
+        - Entwickler-Kollaborator(en)
+        - Design-Kollaborator(en)
+        - Produkt/Operations-Kollaborator(en)
+        - Feedback zu Scope/Loesung
+    validations:
+      required: true
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: Ich verstehe, dass hier gepostete Ideen als oeffentlich geteilt gelten.
+          required: true
+        - label: Ich habe bestehende Issues gesucht; dies ist kein Duplikat.
+          required: true

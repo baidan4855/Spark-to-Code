@@ -1,0 +1,73 @@
+name: Building Update
+description: Share project/team progress for an idea that is already being built.
+title: "[Building] "
+labels:
+  - building
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to share build progress, milestones, blockers, and collaboration needs.
+        
+        You may write your issue in English, Chinese, French, or German.
+  - type: input
+    id: project-name
+    attributes:
+      label: 1. Project name
+      placeholder: Your project/team name
+    validations:
+      required: true
+  - type: input
+    id: related-issue
+    attributes:
+      label: 2. Related idea issue
+      description: Link to the original idea issue (if any)
+      placeholder: Example: #12
+    validations:
+      required: false
+  - type: textarea
+    id: current-status
+    attributes:
+      label: 3. Current status
+      description: What has been built so far?
+      placeholder: MVP scope, completed modules, current demo state
+    validations:
+      required: true
+  - type: textarea
+    id: milestone-plan
+    attributes:
+      label: 4. Next milestone
+      description: What is your next concrete step?
+      placeholder: Milestone goal, target date, acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: 5. Blockers
+      description: What is slowing you down right now?
+      placeholder: Technical challenge, design gap, user feedback gap, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: team-needs
+    attributes:
+      label: 6. Team needs
+      description: Are you recruiting? If yes, specify role/stack/time expectation.
+      placeholder: Example: Need 1 frontend engineer (React/TS), 4-6 hours/week
+    validations:
+      required: false
+  - type: input
+    id: demo-link
+    attributes:
+      label: 7. Demo or repo link
+      placeholder: URL
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: I understand ideas and updates posted here are publicly shared.
+          required: true

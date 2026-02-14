@@ -1,0 +1,67 @@
+name: Idée / Problème
+description: Partagez une nouvelle idée logicielle, un problème ou un besoin non couvert.
+title: "[Idée] "
+labels:
+  - idea
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour votre partage. Soyez précis et orienté scénario.
+        
+        Vous pouvez écrire en anglais, chinois, français ou allemand.
+  - type: textarea
+    id: pain-point
+    attributes:
+      label: 1. Problème
+      description: Qu'est-ce qui est réellement difficile aujourd'hui ?
+      placeholder: Décrivez le contexte, le flux actuel et le point de blocage.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 2. Solution proposée
+      description: Quelle fonctionnalité ou quel logiciel imaginez-vous ?
+      placeholder: Décrivez le flux clé, les entrées/sorties et l'expérience attendue.
+    validations:
+      required: true
+  - type: input
+    id: target-users
+    attributes:
+      label: 3. Utilisateurs cibles
+      description: Qui va l'utiliser ?
+      placeholder: Exemple : photographes indépendants, étudiants de première année
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 4. Alternatives existantes
+      description: Quels outils avez-vous testés et pourquoi ne suffisent-ils pas ?
+      placeholder: Ajoutez des liens et des limites concrètes.
+    validations:
+      required: true
+  - type: dropdown
+    id: support-needed
+    attributes:
+      label: 5. Aide recherchée
+      description: De quel type d'aide avez-vous besoin maintenant ?
+      multiple: true
+      options:
+        - Recommandation d'outil existant
+        - Collaborateur(s) développeur(s)
+        - Collaborateur(s) design
+        - Collaborateur(s) produit/opérations
+        - Retour sur périmètre/solution
+    validations:
+      required: true
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: Je comprends que les idées publiées ici sont des concepts publics.
+          required: true
+        - label: J'ai recherché les issues existantes et ce n'est pas un doublon.
+          required: true

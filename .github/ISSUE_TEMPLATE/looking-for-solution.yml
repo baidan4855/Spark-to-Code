@@ -1,0 +1,50 @@
+name: Looking for Solution
+description: Ask the community for existing software recommendations.
+title: "[Looking for Solution] "
+labels:
+  - looking-for-solution
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when you want existing tool recommendations before building from scratch.
+        
+        You may write your issue in English, Chinese, French, or German.
+  - type: textarea
+    id: problem-scenario
+    attributes:
+      label: 1. Problem scenario
+      description: What are you trying to do, and where do current workflows fail?
+      placeholder: Include context, constraints, and expected outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: must-have
+    attributes:
+      label: 2. Must-have requirements
+      description: Which capabilities are mandatory?
+      placeholder: Example: API support, self-hosted, mobile app, low cost
+    validations:
+      required: true
+  - type: textarea
+    id: tried-tools
+    attributes:
+      label: 3. Tools already tried
+      description: Which products did you test and why were they not enough?
+      placeholder: Add links and concrete shortcomings.
+    validations:
+      required: false
+  - type: input
+    id: budget
+    attributes:
+      label: 4. Budget range (optional)
+      placeholder: Example: Free / < $20 month / Enterprise
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before posting.
+          required: true

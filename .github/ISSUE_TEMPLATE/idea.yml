@@ -1,0 +1,67 @@
+name: Idea / Pain Point
+description: Share a new software idea, problem, or unmet need.
+title: "[Idea] "
+labels:
+  - idea
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. Please be specific and scenario-driven.
+        
+        You may write your issue in English, Chinese, French, or German.
+  - type: textarea
+    id: pain-point
+    attributes:
+      label: 1. Pain point
+      description: What exactly is inconvenient today?
+      placeholder: Describe a specific scenario, current workflow, and where it breaks.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 2. Proposed solution
+      description: What software/function do you imagine?
+      placeholder: Describe the key workflow, input/output, and expected experience.
+    validations:
+      required: true
+  - type: input
+    id: target-users
+    attributes:
+      label: 3. Target users
+      description: Who will use this?
+      placeholder: Example: indie photographers, new college students, freelance PMs
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 4. Existing alternatives
+      description: Which existing tools did you check? Why are they not enough?
+      placeholder: List links and specific gaps.
+    validations:
+      required: true
+  - type: dropdown
+    id: support-needed
+    attributes:
+      label: 5. Support needed
+      description: What kind of help are you looking for right now?
+      multiple: true
+      options:
+        - Existing tool recommendation
+        - Developer collaborator(s)
+        - Designer collaborator(s)
+        - Product/operation collaborator(s)
+        - Scope/solution feedback
+    validations:
+      required: true
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: I understand ideas posted here are publicly shared concepts.
+          required: true
+        - label: I searched existing issues and this is not a duplicate.
+          required: true

@@ -1,0 +1,50 @@
+name: 寻找现成方案
+description: 向社区寻求现有软件推荐。
+title: "[寻找现成方案] "
+labels:
+  - looking-for-solution
+body:
+  - type: markdown
+    attributes:
+      value: |
+        当你希望先找现成工具而不是从零开发时，请使用该表单。
+        
+        你可以使用英语、中文、法语或德语填写。
+  - type: textarea
+    id: problem-scenario
+    attributes:
+      label: 1. 问题场景
+      description: 你要完成什么任务？当前流程哪里失败？
+      placeholder: 请包含场景、约束和预期结果。
+    validations:
+      required: true
+  - type: textarea
+    id: must-have
+    attributes:
+      label: 2. 必要需求
+      description: 哪些能力是必须具备的？
+      placeholder: 例如：API、可自部署、移动端、低成本
+    validations:
+      required: true
+  - type: textarea
+    id: tried-tools
+    attributes:
+      label: 3. 已尝试工具
+      description: 你试过哪些产品？它们为什么不够好？
+      placeholder: 请附链接和具体不足。
+    validations:
+      required: false
+  - type: input
+    id: budget
+    attributes:
+      label: 4. 预算范围（可选）
+      placeholder: 例如：免费 / 每月低于 20 美元 / 企业预算
+    validations:
+      required: false
+  - type: checkboxes
+    id: policy-check
+    attributes:
+      label: Checklist
+      options:
+        - label: 我在提交前已搜索过现有 Issue。
+          required: true
