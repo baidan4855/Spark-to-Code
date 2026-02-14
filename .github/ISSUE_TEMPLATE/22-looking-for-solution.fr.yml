@@ -23,7 +23,7 @@ body:
     attributes:
       label: 2. Exigences indispensables
       description: Quelles capacites sont obligatoires ?
-      placeholder: Exemple : API, auto-hebergement, mobile, faible cout
+      placeholder: "Exemple : API, auto-hebergement, mobile, faible cout"
     validations:
       required: true
   - type: textarea
@@ -38,7 +38,7 @@ body:
     id: budget
     attributes:
       label: 4. Budget (optionnel)
-      placeholder: Exemple : Gratuit / < 20 USD mois / Budget entreprise
+      placeholder: "Exemple : Gratuit / < 20 USD mois / Budget entreprise"
     validations:
       required: false
   - type: checkboxes

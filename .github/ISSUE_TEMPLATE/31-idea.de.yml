@@ -31,7 +31,7 @@ body:
     attributes:
       label: 3. Zielnutzer
       description: Wer wird es nutzen?
-      placeholder: Beispiel: Indie-Fotografen, Studienanfaenger
+      placeholder: "Beispiel: Indie-Fotografen, Studienanfaenger"
     validations:
       required: true
   - type: textarea

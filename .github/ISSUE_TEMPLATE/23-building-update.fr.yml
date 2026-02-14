@@ -22,7 +22,7 @@ body:
     attributes:
       label: 2. Issue idee associee
       description: Lien vers l'issue d'idee d'origine (si disponible)
-      placeholder: Exemple : #12
+      placeholder: "Exemple : #12"
     validations:
       required: false
   - type: textarea
@@ -54,7 +54,7 @@ body:
     attributes:
       label: 6. Besoins d'equipe
       description: Recrutez-vous ? Si oui, precisez role/stack/disponibilite.
-      placeholder: Exemple : 1 dev frontend (React/TS), 4-6h/semaine
+      placeholder: "Exemple : 1 dev frontend (React/TS), 4-6h/semaine"
     validations:
       required: false
   - type: input

@@ -23,7 +23,7 @@ body:
     attributes:
       label: 2. Must-have requirements
       description: Which capabilities are mandatory?
-      placeholder: Example: API support, self-hosted, mobile app, low cost
+      placeholder: "Example: API support, self-hosted, mobile app, low cost"
     validations:
       required: true
   - type: textarea
@@ -38,7 +38,7 @@ body:
     id: budget
     attributes:
       label: 4. Budget range (optional)
-      placeholder: Example: Free / < $20 month / Enterprise
+      placeholder: "Example: Free / < $20 month / Enterprise"
     validations:
       required: false
   - type: checkboxes

@@ -31,7 +31,7 @@ body:
     attributes:
       label: 3. Target users
       description: Who will use this?
-      placeholder: Example: indie photographers, new college students, freelance PMs
+      placeholder: "Example: indie photographers, new college students, freelance PMs"
     validations:
       required: true
   - type: textarea

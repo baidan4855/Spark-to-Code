@@ -22,7 +22,7 @@ body:
     attributes:
       label: 2. Related idea issue
       description: Link to the original idea issue (if any)
-      placeholder: Example: #12
+      placeholder: "Example: #12"
     validations:
       required: false
   - type: textarea
@@ -54,7 +54,7 @@ body:
     attributes:
       label: 6. Team needs
       description: Are you recruiting? If yes, specify role/stack/time expectation.
-      placeholder: Example: Need 1 frontend engineer (React/TS), 4-6 hours/week
+      placeholder: "Example: Need 1 frontend engineer (React/TS), 4-6 hours/week"
     validations:
       required: false
   - type: input

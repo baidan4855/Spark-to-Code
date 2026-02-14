@@ -23,7 +23,7 @@ body:
     attributes:
       label: 2. Muss-Anforderungen
       description: Welche Funktionen sind zwingend erforderlich?
-      placeholder: Beispiel: API, Self-Hosting, Mobile-App, niedrige Kosten
+      placeholder: "Beispiel: API, Self-Hosting, Mobile-App, niedrige Kosten"
     validations:
       required: true
   - type: textarea
@@ -38,7 +38,7 @@ body:
     id: budget
     attributes:
       label: 4. Budgetbereich (optional)
-      placeholder: Beispiel: Kostenlos / < 20 USD pro Monat / Enterprise
+      placeholder: "Beispiel: Kostenlos / < 20 USD pro Monat / Enterprise"
     validations:
       required: false
   - type: checkboxes

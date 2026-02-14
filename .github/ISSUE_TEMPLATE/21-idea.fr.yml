@@ -31,7 +31,7 @@ body:
     attributes:
       label: 3. Utilisateurs cibles
       description: Qui va l'utiliser ?
-      placeholder: Exemple : photographes indépendants, étudiants de première année
+      placeholder: "Exemple : photographes indépendants, étudiants de première année"
     validations:
       required: true
   - type: textarea
