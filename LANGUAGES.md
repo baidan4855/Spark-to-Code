@@ -15,6 +15,7 @@ English is the primary language in this repository.
 ## Notes
 
 - Issue forms are available in English, Chinese, French, and German:
-  - `idea.yml`, `idea.zh-CN.yml`, `idea.fr.yml`, `idea.de.yml`
-  - `looking-for-solution.yml`, `looking-for-solution.zh-CN.yml`, `looking-for-solution.fr.yml`, `looking-for-solution.de.yml`
-  - `building-update.yml`, `building-update.zh-CN.yml`, `building-update.fr.yml`, `building-update.de.yml`
+  - `01-idea.en.yml`, `11-idea.zh-CN.yml`, `21-idea.fr.yml`, `31-idea.de.yml`
+  - `02-looking-for-solution.en.yml`, `12-looking-for-solution.zh-CN.yml`, `22-looking-for-solution.fr.yml`, `32-looking-for-solution.de.yml`
+  - `03-building-update.en.yml`, `13-building-update.zh-CN.yml`, `23-building-update.fr.yml`, `33-building-update.de.yml`
+- Issue forms are prefixed with numbers to keep display order stable in the template picker.
